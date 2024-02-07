@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/normalize.css">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/ionicons.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="resources/CSS/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        
+        <link rel=stylesheet type="text/css" href="vendors/CSS/grid.css">
+        
+
+        
+        <title>iConvert</title>    
+    
+    
+    </head>
+    
+    
+    
+    <body>
+
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1016.0.min.js"></script>
+        <script src="resources/JS/app.js"></script>
+        
+        <header>
+            
+            <nav>
+                
+                <div class="row">
+                    
+                    <img src="resources/IMG/logo.png" alt="iconvert log" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#section-steps-anchor">How it works</a></li>
+                        <li><a href="#section-conversion-anchor">Upload image</a></li>             
+                    </ul>                
+                </div>
+            
+            </nav>
+            
+            <div class="hero-text">
+                
+                <h1>Online Image Converter.<br><br>Convert your image in seconds using the power of AWS services.</h1>
+                <a class="btn btn-full" href="#">Try now !</a>   
+            
+            </div>
+        
+        
+        
+        </header> 
+        
+        
+            
+        <section class="section-formats">
+            
+            <ul class="format-showcase clearfix">
+                
+                <li>
+                    
+                    <figure class="format-photo">
+                        
+                        <img src="resources/IMG/png.png" alt="1. png">
+                    
+                    
+                    </figure>
+                
+                
+                </li>
+                
+                <li>
+                    
+                    <figure class="format-photo">
+                        
+                        <img src="resources/IMG/jpeg.png" alt="2. jpeg">
+                    
+                    
+                    </figure>
+                
+                
+                </li>
+                
+                <li>
+                    
+                    <figure class="format-photo">
+                        
+                        <img src="resources/IMG/tiff.png" alt="3.	tiff">
+                    
+                    
+                    </figure>
+                
+                
+                </li>
+                
+                <li>
+                    
+                    <figure class="format-photo">
+                        
+                        <img src="resources/IMG/bmp.png" alt="4. bmp ">
+                    
+                    
+                    </figure>
+                
+                
+                </li>
+            
+            </ul>
+        
+        </section>
+        
+        <a id="section-steps-anchor"> <section class="section-steps">
+            
+            <div class="row">
+                
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>            
+            
+            </div>
+            
+            <div class="row">
+                
+                <div class="col span-1-of-2 step-box">
+                    
+                    <img src="resources/IMG/file-transfer.png"  alt="File-Transfer" class="file-trans-photo">
+                
+                </div>
+                
+                <div class="col span-1-of-2 step-box">
+                    
+                    <div class="works-step">
+                        
+                        <div>1</div>
+                        
+                        <p class="centered-para">Choose the image that you need to convert </p>
+                    
+                    
+                    </div>
+                    
+                    <div class="works-step">
+                        
+                        <div>2</div>
+                        
+                        <p class="centered-para">Choose the new format that you need to convert into</p>
+                    
+                    
+                    </div>
+                    
+                    <div class="works-step">
+                        
+                        <div>3</div>
+                        
+                        <p>Wait for your new image to be automatically downloaded!</p>
+                    
+                    
+                    </div>
+                
+                
+                </div>
+            
+                
+            </div>
+        
+        </section></a>
+
+        <a id="section-conversion-anchor"><section class="section-conversion">
+
+            <div class="row">
+                
+                <h2>Convert your image</h2>            
+            
+            </div>
+
+
+            <div class="row">
+
+                <div class="col span-1-of-2">
+
+                    <label>Choose an image to convert:</label>
+
+                </div>
+
+                <div class="col span-1-of-2">
+
+                    <input type="file" id="input-image" accept="image/*">
+
+                </div>
+
+            </div>
+            
+            
+            <div class="row">
+
+                <div class="col span-1-of-2">
+
+                    <label>Select the new format:</label>
+
+                </div>
+
+                <div class="col span-1-of-2">
+
+                    <select id="new-ext">
+                        <option selected disabled value="">
+                            - Select -
+                        </option>
+                        <option value="png"> png</option>
+                        <option value="jpg">jpg</option>
+                        <option value="tiff">tiff</option>
+                        <option value="bmp">bmp</option>
+                       
+                    </select>                   
+
+                </div>
+
+            </div>
+
+
+            <div class="upload-btn-div">          
+    
+                <button class="upload-btn" id="up-btn">Upload the image</button>    
+        
+            </div>
+
+            <div id="text-message" class="hidden-message">none</div>
+
+        </section></a>
+        
+
+
+        
+        <footer>
+            
+            <div class="row">
+                
+                <div class="col span-1-of-2">
+
+                    <p>Copryright &copy; 2024 by Mohaned. All rights reserved.</p>               
+                
+                </div>
+                
+                <div class="col span-1-of-2">
+                    
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/mohaneduwk97" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohaned-ahmad/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            
+            </div>      
+        
+        </footer>
+    
+    </body>    
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
