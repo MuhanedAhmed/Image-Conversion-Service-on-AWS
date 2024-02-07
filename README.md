@@ -9,6 +9,12 @@ This project is a simple web application that allows users to convert images bet
 - User-friendly web interface for uploading images and downloading converted images.
 - Seamless integration with AWS Lambda and Amazon S3 for serverless image conversion.
 
+
+## Architecture
+
+![project-architecture](https://github.com/MuhanedAhmed/Image-Conversion-Service-on-AWS/assets/154678423/3350405e-760f-49a6-82ae-4df4389be9b0)
+
+
 ## Configurations of AWS Services
 
 ### Amazon S3
